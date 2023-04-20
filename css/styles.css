@@ -1,0 +1,458 @@
+:root {
+  /*  COLORS  */
+  --white: #fff;
+  --gray: #ccc;
+  --blue: #175dbe;
+  --black: #000;
+
+  /*  FONTS  */
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #1cacdc;
+  border: none;
+  border-radius: 5px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.box-container .box-1 {
+  width: 30%;
+  height: 25%;
+  background-color: #1cacdc9f;
+  position: absolute;
+  top: -10%;
+  right: 90px;
+  z-index: -1;
+  border-radius: 50px;
+  transform: rotate(-50deg);
+  transform-origin: top top;
+  box-shadow: 0 0 5px #3333333f;
+}
+
+.box-container .box-2 {
+  width: 30%;
+  height: 25%;
+  background-color: #b6dc1c;
+  position: absolute;
+  top: -10%;
+  right: 190px;
+  z-index: -1;
+  border-radius: 50px;
+  transform: rotate(-50deg);
+  transform-origin: top top;
+  box-shadow: 0 0 5px #3333333f;
+}
+
+.box-container .box-3 {
+  width: 30%;
+  height: 25%;
+  background-color: #2cdc1cf2;
+  position: absolute;
+  top: -10%;
+  right: 290px;
+  z-index: -1;
+  border-radius: 50px;
+  transform: rotate(-50deg);
+  transform-origin: top top;
+  box-shadow: 0 0 5px #3333333f;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container .header .navbar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  background: #ffffff46;
+  border-bottom: 1px solid #ccc;
+  z-index: 9999;
+}
+
+.header-container .header .navbar ul {
+  display: flex;
+  margin: 0 50px;
+}
+
+.header-container .header .navbar ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.header-container .header .navbar ul li a {
+  text-decoration: none;
+  color: #818181;
+  padding: 5px;
+  transition: all 0.5s linear;
+}
+
+.header-container .header .navbar ul li .active {
+  background: #d9cc14;
+  border-radius: 5px;
+}
+
+.header-container .header .navbar ul li .resume {
+  color: #1cacdc;
+}
+
+.header-container .header .navbar ul li a:hover {
+  color: #1cacdc;
+  background: #d9cc14;
+  border-radius: 5px;
+}
+
+.header-container .header .logo_search-bar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background: #f6f6f663;
+  box-shadow: 0 3px 5px #0000007f;
+  position: relative;
+  top: 40px;
+  margin-bottom: 40px;
+}
+
+.header-container .header .logo_search-bar .logo a {
+  text-decoration: none;
+}
+
+.header-container .header .logo_search-bar .logo a img {
+  width: 30%;
+  height: auto;
+  filter: drop-shadow(0px 0 2px #d9cc147d);
+}
+
+.header-container .header .logo_search-bar .search {
+  width: 100%;
+  height: 55%;
+}
+
+.header-container .header .logo_search-bar .search form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 10%;
+}
+
+.header-container .header .logo_search-bar .search form input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #333;
+  border-radius: 50px;
+  padding-left: 10px;
+  background: #cccccc6a;
+  box-shadow: 0 5px 0px #333;
+}
+
+.header-container
+  .header
+  .logo_search-bar
+  .search
+  form
+  input::-webkit-search-cancel-button {
+  position: relative;
+  right: 50px;
+}
+
+.header-container .header .logo_search-bar .search form input:focus {
+  outline: 1px solid #1cacdc;
+  border: none;
+  box-shadow: 0 5px 0px #0b7db6c7;
+}
+
+.header-container .header .logo_search-bar .search form button {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+/*  FOR MAIN  */
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.main .article {
+  height: 900px;
+  display: flex;
+}
+
+.main .article .section-1 {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.main .article .section-2 {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main #projects {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.main #projects .title,
+#skills-container .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #1cacdc;
+  padding-bottom: 5px;
+}
+
+.main #projects .view-all {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.main #projects .view-all a {
+  text-decoration: none;
+  text-align: center;
+  color: #ccc;
+  background-color: #1cacdc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000004f, inset 0 0 10px #0000003e;
+}
+
+.main #projects .view-all a:hover {
+  background-color: #0eb5ed;
+  color: #fff;
+}
+
+.main #projects .title h3,
+#skills-container .title h3 {
+  color: #1cacdc9f;
+  font-size: 30px;
+}
+
+.main #projects .title h3::first-letter,
+#skills-container .title h3::first-letter {
+  color: #1cacdc;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.main #projects .project-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main #projects .project-types a {
+  width: 250px;
+  height: 50%;
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  background-color: #1cacdc;
+  box-shadow: 0 0 5px #333;
+  border-radius: 5px 5px 0 0;
+  transition: all 0.3s linear;
+}
+
+.main #projects .project-types a .pulse {
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  border: 1px solid #ffffffcb;
+  background-color: #f17121c1;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: red;
+  }
+}
+
+.main #projects .project-types a:hover {
+  transform: scale(1.04);
+  z-index: 1;
+}
+
+.main #projects .project-types a:hover p {
+  color: #ccc;
+}
+
+.main #projects .project-types a .img {
+  width: 100%;
+  height: 300px;
+}
+
+.main #projects .project-types a .img img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.main #projects .project-types a p {
+  color: #333;
+  font-size: 20px;
+  padding: 10px 5px;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+/*  FOR SKILLS  */
+.main #skills-container {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  margin: 0 50px;
+}
+
+.main #skills-container .skills {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main #skills-container .skills img {
+  width: 100px;
+  margin: 0;
+  padding: 5px;
+}
+
+.main #skills-container .skills .css,
+.javascript,
+.adobe-illu,
+.adobe-photoshop,
+.html {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 5px #33333386;
+  overflow: hidden;
+}
+
+.progress-bar-container .progress-bar {
+  background: #1cacdc;
+  font-size: 14px;
+  padding: 3px;
+  color: #ccc;
+  width: 90%;
+  animation: background 3s linear;
+  position: relative;
+  transition: all 0.3s linear;
+  text-align: end;
+}
+
+.progress-bar-container .javas,
+.progress-bar-container .illustrator,
+.progress-bar-container .adobe-photo {
+  width: 60%;
+}
+
+@keyframes background {
+  0% {
+    left: -50px;
+    border-radius: 10px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.main .footer-container {
+  width: 100%;
+  height: 30%;
+}
+
+.main .footer-container .footer {
+  width: 100%;
+  height: 100%;
+  background: #0f5269;
+}
+
+/*  GALLERY  */
+
+/* For Firefox */
+progress::-moz-progress-bar {
+  background: green;
+}
+
+/* For Chrome or Safari */
+progress::-webkit-progress-value {
+  background: green;
+  border-radius: 5px;
+}
+
+/* For IE10 */
+progress {
+  background: green;
+}

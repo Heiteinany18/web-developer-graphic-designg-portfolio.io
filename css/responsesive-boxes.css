@@ -1,0 +1,364 @@
+.main .article .section-1 .item {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 15px #0000003f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  For Item 1  */
+.main .article .section-1 .item-1 {
+  background: #84bf04d6;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  box-shadow: 0 0 10px #0000002b, inset 0 0 10px #0000003e;
+}
+
+.main .article .section-1 a {
+  text-decoration: none;
+}
+
+.main .article .section-1 a .item-2 img {
+  width: 50px;
+  position: absolute;
+  top: 4px;
+  z-index: 1;
+}
+
+/*  For Item 2  */
+.main .article .section-1 a .item-2 {
+  background: #ffffff;
+  color: #333;
+  width: 40%;
+  height: 20%;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: skew(-20deg);
+  transition: all 0.2s linear;
+  text-align: center;
+  z-index: 999;
+}
+
+.main .article .section-1 a .item-2:hover {
+  background: #d9cc14;
+  transform: scale(1.04) skew(-20deg);
+}
+
+.main .article .section-1 a .item-2 h3 {
+  font-size: 150%;
+  color: #1cacdc9f;
+  border-bottom: 3px solid #1cacdc;
+  margin: 0 5px 5px 5px;
+  transition: all 0.2s linear;
+  width: 60%;
+}
+
+/*  Targets the first letter of h3  */
+.main .article .section-1 a .item-2 h3::first-letter {
+  font-size: 30px;
+  color: #1cacdc;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.main .article .section-1 a .item-2:hover h3 {
+  color: #fff;
+}
+
+.main .article .section-1 a .item-2 p {
+  font-size: 90%;
+}
+
+/*  For Project Tile  */
+.main .article .section-1 .project {
+  background: #ffffff;
+  color: #333;
+  width: 35%;
+  height: 20%;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: skew(-20deg);
+  transition: all 0.2s linear;
+  text-align: center;
+  z-index: 99;
+  box-shadow: 0 3px 10px #00000036;
+}
+
+.main .article .section-1 .project:hover {
+  transform: scale(1.04) skew(-20deg);
+}
+
+/*  For Item 3  */
+.main .article .section-1 .project a .item-3 {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .article .section-1 a .item-3 img {
+  width: 50px;
+}
+
+/*  For Item 3 Hover  */
+.main .article .section-1 .project a .item-3:hover {
+  background: #d9415d;
+}
+
+/*  For Item 3 H3  */
+.main .article .section-1 .project a .item-3 h3 {
+  font-size: 150%;
+  color: #1cacdc;
+  border-bottom: 3px solid #175dbeeb;
+  margin: 0 5px 5px 5px;
+  transition: all 0.2s linear;
+  width: 60%;
+}
+
+/*  Targets the first letter of h3  */
+.main .article .section-1 .project a .item-3 h3::first-letter {
+  font-size: 30px;
+  color: #175dbe;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.main .article .section-1 .project a .item-3:hover h3 {
+  color: #fff;
+}
+
+.main .article .section-1 .project a .item-3 p {
+  font-size: 90%;
+  color: #333;
+}
+
+.main .article .section-1 .project .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  background: #d9cc14b7;
+}
+
+.main .article .section-1 .project .social-links ul {
+  display: flex;
+}
+
+.main .article .section-1 .project .social-links ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.main .article .section-1 .project .social-links ul li a {
+  text-decoration: none;
+  color: #292929;
+  font-size: 130%;
+  transition: all 0.2s linear;
+  text-shadow: 1px 1px 1px #d97b41;
+}
+
+.main .article .section-1 .project .social-links ul li a:hover {
+  color: #1cacdc;
+  text-shadow: 1px 1px 2px #1cacdc;
+}
+
+/*  For Item 4  */
+.main .article .section-1 .item-4 {
+  background: #d9415d;
+  color: #333;
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  top: 3.5%;
+  left: 25%;
+}
+
+/*  For Item 5  */
+.main .article .section-1 .item-5 {
+  background: #ffffff;
+  color: #333;
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  top: -2%;
+  left: 35%;
+  transform: skew(-20deg);
+}
+
+/*  For Item 6  */
+.main .article .section-1 .item-6 {
+  background: #ffffff;
+  color: #333;
+  width: 15%;
+  height: 9%;
+  position: absolute;
+  top: 15%;
+  left: 39%;
+  transform: skew(-20deg);
+}
+
+/*  For Item 7  */
+.main .article .section-1 .item-7 {
+  background: #ffffff;
+  color: #333;
+  width: 20%;
+  height: 15%;
+  position: absolute;
+  top: 14%;
+  left: 74%;
+  transform: skew(-20deg);
+}
+
+/*  For Item 8  */
+.main .article .section-1 .item-8 {
+  background: #ffffff;
+  color: #333;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 30%;
+  left: 41%;
+  transform: skew(-20deg);
+}
+
+/*  For Item 9  */
+.main .article .section-1 .item-9 {
+  background: #ffffff;
+  color: #333;
+  width: 45%;
+  height: 30%;
+  position: absolute;
+  top: 46%;
+  left: 30%;
+  transform: skew(-20deg);
+}
+
+/*  For Item 10  */
+.main .article .section-1 .item-10 {
+  background: #481c33;
+  color: #333;
+  width: 20%;
+  height: 15%;
+  position: absolute;
+  top: 35%;
+  left: 75%;
+  z-index: -1;
+  box-shadow: 0 0 10px #00000076, inset 0 0 10px #0000003e;
+}
+
+/*  For Item 11  */
+.main .article .section-1 a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.main .article .section-1 a .item-11 {
+  background: #ffffff;
+  color: #333;
+  width: 35%;
+  height: 20%;
+  position: absolute;
+  top: 53%;
+  left: 55%;
+  transform: skew(-20deg);
+  transition: all 0.2s linear;
+}
+
+.main .article .section-1 a .item-11 img {
+  width: 50px;
+  position: absolute;
+  top: 4px;
+  z-index: 1;
+}
+
+.main .article .section-1 a .item-11:hover {
+  background-color: #1cacdc;
+  color: red;
+  transform: scale(1.04) skew(-20deg);
+}
+
+.main .article .section-1 a .item-11 h3 {
+  color: #2086d4;
+  font-size: 150%;
+  border-bottom: 3px solid #d9415d;
+  margin: 0 5px 5px 5px;
+  transition: all 0.2s linear;
+  width: 60%;
+}
+
+.main .article .section-1 a .item-11:hover h3 {
+  color: #fff;
+}
+
+.main .article .section-1 a .item-11 h3::first-letter {
+  color: #d9415d;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px #333;
+}
+
+.main .article .section-1 a .item-11 p {
+  font-size: 90%;
+  color: #333;
+}
+
+/*  For Item 12  */
+.main .article .section-1 .item-12 {
+  background: #ffffff;
+  color: #333;
+  width: 20%;
+  height: 10%;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: skew(-20deg);
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+
+/*  For Item 13  */
+.main .article .section-1 .item-13 {
+  background: #ffffff;
+  color: #333;
+  width: 15%;
+  height: 10%;
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  transform: skew(-20deg);
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+
+/*  For Item 14  */
+.main .article .section-1 .item-14 {
+  background: #ffffff;
+  color: #333;
+  width: 10%;
+  height: 7%;
+  position: absolute;
+  top: 65%;
+  left: 90%;
+  transform: skew(-20deg);
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+
+/*  For Item 15  */
+.main .article .section-1 .item-15 {
+  background: #d9415d;
+  color: #333;
+  width: 40%;
+  height: 20%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: skew(-20deg);
+  transition: all 0.2s linear;
+  z-index: -2;
+}
